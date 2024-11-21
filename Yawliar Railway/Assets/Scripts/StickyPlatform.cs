@@ -4,19 +4,38 @@ using UnityEngine;
 
 public class StickyPlatform : MonoBehaviour
 {
-    void OnCollisonEnter(Collision collision)
+    private Vector3 lastPlatformPosition;
+    private GameObject player;
+
+    private void Start()
+    {
+        lastPlatformPosition = transform.position;
+    }
+
+    private void Update()
+    {
+        if (player != null)
+        {
+            Vector3 platformMovement = transform.position - lastPlatformPosition;
+            player.transform.position += platformMovement;
+        }
+        lastPlatformPosition = transform.position;
+    }
+
+    private void OnCollisonEnter(Collision collision)
     {
         if (collision.gameObject.name == "Player")
         {
-            collision.gameObject.transform.SetParent(transform);
+            player = collision.gameObject;
+            lastPlatformPosition = transform.position;
         }
     }
 
-    void OnCollisionExit(Collision collision)
+    private void OnCollisionExit (Collision collision)
     {
         if (collision.gameObject.name == "Player")
         {
-            collision.gameObject.transform.SetParent(null);
+            player = null;
         }
     }
 }
