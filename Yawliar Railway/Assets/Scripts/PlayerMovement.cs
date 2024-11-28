@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Build.Content;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -15,9 +16,12 @@ public class PlayerMovement : MonoBehaviour
     float xRotation = 0f;
     [SerializeField] Transform playerCamera;
 
+    Animator myAnim;
+
     // Start is called before the first frame update
     void Start()
     {
+        myAnim = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -40,8 +44,11 @@ public class PlayerMovement : MonoBehaviour
         Vector3 moveDirection = transform.right * horizontalInput + transform.forward * verticalInput;
         rb.velocity = new Vector3 (moveDirection.x * movementSpeed, rb.velocity.y, moveDirection.z * movementSpeed);
 
+        myAnim.SetFloat("speed", moveDirection.magnitude);
+
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
+            myAnim.SetTrigger("jumped");
             Jump();
         }
     }
