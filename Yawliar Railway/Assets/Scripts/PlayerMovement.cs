@@ -44,11 +44,12 @@ public class PlayerMovement : MonoBehaviour
         Vector3 moveDirection = transform.right * horizontalInput + transform.forward * verticalInput;
         rb.velocity = new Vector3 (moveDirection.x * movementSpeed, rb.velocity.y, moveDirection.z * movementSpeed);
 
-        myAnim.SetFloat("speed", moveDirection.magnitude);
+        myAnim.SetFloat("Speed", moveDirection.magnitude);
+        myAnim.SetBool("IsOnGround", IsGrounded());
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
-            myAnim.SetTrigger("jumped");
+            myAnim.SetTrigger("Jumped");
             Jump();
         }
     }

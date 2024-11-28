@@ -79,8 +79,8 @@ ModelImporter:
     normalSmoothingSource: 0
   referencedClips:
   - eaf22fa362714764c8e5de7d98c0ac5e
-  - bba7303790838d645b4c7b87a18082b8
-  - 3de607e73db1edd49b212a5e5b7b9868
+  - f3330247bfddb324aa00473350065be6
+  - 803bfffb310776e4186e213f8ec06827
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
@@ -93,7 +93,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.25
+    globalScale: 25
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
