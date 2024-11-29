@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 113
+  controlID: 47
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -190,7 +190,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 380
+    width: 379
     height: 552
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
@@ -214,9 +214,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 380
+    x: 379
     y: 0
-    width: 1001
+    width: 1002
     height: 552
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
@@ -301,7 +301,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1920
     y: 73
-    width: 379
+    width: 378
     height: 531
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -315,10 +315,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 962}
+      scrollPos: {x: 0, y: 690}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: cceefeff12f1ffff6e630000d6640000cc650000
+      m_ExpandedIDs: ae8dfeff0a1bffffe08effff66afffff00fbffff54bb0000f2bb0000c0d80000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -362,9 +362,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2300
+    x: 2299
     y: 73
-    width: 999
+    width: 1000
     height: 531
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -382,7 +382,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 999, y: 510}
+  m_TargetSize: {x: 1000, y: 510}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -397,8 +397,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -499.5
-    m_HBaseRangeMax: 499.5
+    m_HBaseRangeMin: -500
+    m_HBaseRangeMax: 500
     m_VBaseRangeMin: -255
     m_VBaseRangeMax: 255
     m_HAllowExceedBaseRangeMin: 1
@@ -418,23 +418,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 999
+      width: 1000
       height: 510
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 499.5, y: 255}
+    m_Translation: {x: 500, y: 255}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -499.5
+      x: -500
       y: -255
-      width: 999
+      width: 1000
       height: 510
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 999, y: 531}
+  m_LastWindowPixelSize: {x: 1000, y: 531}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -460,9 +460,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2300
+    x: 2299
     y: 73
-    width: 999
+    width: 1000
     height: 531
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -770,9 +770,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 21.787117, y: -39.718506, z: 70.02857}
+    m_Target: {x: -7.411868, y: 1.5995066, z: 4.322366}
     speed: 2
-    m_Value: {x: 21.787117, y: -39.718506, z: 70.02857}
+    m_Value: {x: -7.4172196, y: 1.8810179, z: 4.0722194}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -818,13 +818,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.22847566, y: -0.06988223, z: 0.01598556, w: -0.971287}
+    m_Target: {x: -0.024955967, y: -0.76579607, z: 0.029975276, w: -0.6425159}
     speed: 2
-    m_Value: {x: -0.22693469, y: -0.06988036, z: 0.0158747, w: -0.97126997}
+    m_Value: {x: -0.025861869, y: -0.76640975, z: 0.031151202, w: -0.6410747}
   m_Size:
-    m_Target: 59.227528
+    m_Target: 26.242233
     speed: 2
-    m_Value: 62.018353
+    m_Value: 27.478779
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -894,7 +894,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Materials
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -902,16 +902,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Materials
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\iross2024\Documents\GitHub\3D-Platformer\Yawliar Railway
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 20}
-    m_SelectedIDs: 765a0000
-    m_LastClickedID: 23158
-    m_ExpandedIDs: 00000000b868000000ca9a3bffffff7f
+    m_SelectedIDs: 16640000
+    m_LastClickedID: 25622
+    m_ExpandedIDs: 00000000fa63000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -939,7 +939,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b8680000
+    m_ExpandedIDs: 00000000fa630000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
