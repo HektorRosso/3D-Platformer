@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638683844166880684
-    m_Hash: 3483235593
+      ticks: 638683050740227970
+    m_Hash: 1733790639
   m_LockFileStatus:
     m_FilePath: C:/Users/iross2024/Documents/GitHub/3D-Platformer/Yawliar Railway/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638683844166880684
-    m_Hash: 1964555197
+      ticks: 638683050740263021
+    m_Hash: 3151034453
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:

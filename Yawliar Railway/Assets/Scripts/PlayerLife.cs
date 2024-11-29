@@ -7,9 +7,13 @@ public class PlayerLife : MonoBehaviour
 {
     Animator myAnim;
 
+    public AudioClip death;
+    AudioSource playerSFX;
+
     void Start()
     {
         myAnim = GetComponentInChildren<Animator>();
+        playerSFX = GetComponent<AudioSource>();
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -21,7 +25,7 @@ public class PlayerLife : MonoBehaviour
 
     void Die()
     {
-        
+        playerSFX.PlayOneShot(death);
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<Rigidbody>().isKinematic = true;
         GetComponent<PlayerMovement>().enabled = false;

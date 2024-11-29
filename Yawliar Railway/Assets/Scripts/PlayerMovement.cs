@@ -16,6 +16,10 @@ public class PlayerMovement : MonoBehaviour
     float xRotation = 0f;
     [SerializeField] Transform playerCamera;
 
+    public AudioClip jump;
+    public AudioClip kill;
+    AudioSource playerSFX;
+
     Animator myAnim;
 
     // Start is called before the first frame update
@@ -24,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
         myAnim = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
+        playerSFX = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -56,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {
+        playerSFX.PlayOneShot(jump);
         rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
     }
 
@@ -64,6 +70,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy Head"))
         {
             Destroy(collision.transform.parent.gameObject);
+            playerSFX.PlayOneShot(kill);
             Jump();
         }
     }
